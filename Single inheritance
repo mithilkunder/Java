@@ -1,0 +1,57 @@
+class Staff
+
+{
+
+int code; String name, address;
+
+Staff (int c, String n, String a) { code=c; name=n; address=a; }
+
+void showdata()
+
+{
+
+System.out.println("code : " + code);
+
+System.out.println("name : " + name);
+
+System.out.println("code : " + address);
+
+}
+
+}
+
+class Teacher extends Staff
+
+{
+
+String subject, publication;
+
+Teacher( int c, String n, String a, String s, String p) {super(c, n, a); subject=s; publication=p;}
+
+void showdata()
+
+{
+
+super.showdata();
+
+System.out.println("subject : " + subject);
+
+System.out.println("publication : " + publication);
+
+}
+
+}
+
+class SIDemo
+
+{
+
+public static void main(String args[])
+
+{
+
+Teacher T=new Teacher(1001,"ASL","AIROLI","DTS","NIRALI");
+
+T.showdata();
+
+}}
