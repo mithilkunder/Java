@@ -1,0 +1,53 @@
+class PalindromeCheck
+
+{
+
+public static void main(String args[])
+
+{
+
+int n, r, sum=0, temp;
+
+n = Integer.parseInt(args[0]); // input from keyboard using Command Line Arguments
+
+temp = n;
+
+while(n>0)
+
+{
+
+r=n%10; //getting remainder
+
+sum=(sum*10)+r;
+
+n=n/10; //getting quotient
+
+} // end of while
+
+if (temp==sum) System.out.println("palindrome number ");
+
+else System.out.println("not palindrome");
+
+} // end of main function
+
+} // end of class
+
+Output:
+
+Way 1: Accept input from keyboard using Command Line Arguments
+
+C:\Users\BEELAB>d:
+
+D:\>cd asl
+
+D:\ASL>javac PalindromeCheck.java
+
+D:\ASL>java PalindromeCheck 454
+
+palindrome number
+
+D:\ASL>java PalindromeCheck 4545
+
+not palindrome
+
+D:\ASL>
