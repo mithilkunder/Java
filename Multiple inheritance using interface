@@ -1,0 +1,92 @@
+class Student
+
+{
+
+int rn;
+
+void getno(int r) {rn=r;}
+
+void putno()
+
+{
+
+System.out.println("Roll No. : " + rn);
+
+}
+
+}
+
+class Test extends Student
+
+{
+
+int sem1, sem2;
+
+void getmarks( int s1,int s2){sem1=s1; sem2=s2;}
+
+void putmarks()
+
+{
+
+System.out.println("Marks Obtained:");
+
+System.out.println(" Semester 1:"+sem1);
+
+System.out.println("Semester 2:"+sem2);
+
+}}
+
+interface Sports
+
+{
+
+int score=10;
+
+void putscore();
+
+}
+
+class Result extends Test implements Sports
+
+{
+
+int total;
+
+void display()
+{
+
+total=sem1+sem2+score;
+
+putno();
+
+putmarks();
+
+putscore();
+
+System.out.println("Total Marks: "+ total);
+
+}
+
+public void putscore()
+
+{ System.out.println("Sports Weight:" + score);}
+
+}
+
+class IDemo
+
+{
+
+public static void main (String args[])
+
+{
+
+Result R=new Result();
+
+R.getno(1);
+
+R.getmarks(1200,1000);
+
+R.display();
+
+}}
