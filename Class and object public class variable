@@ -1,0 +1,41 @@
+public class VariableExample
+
+{
+
+int myVariable; // Instance Variable
+
+static int data = 30; // Static or Class Variable
+
+public static void main(String args[])
+
+{
+
+int a = 100; // Local Variable
+
+VariableExample obj = new VariableExample();
+
+System.out.println("Value of instance variable myVariable: "+obj.myVariable);
+
+System.out.println("Value of static variable data: "+VariableExample.data);
+
+System.out.println("Value of local variable a: "+a);
+
+}
+
+}
+
+Output :
+
+C:\Users\BEELAB>d:
+
+D:\>cd asl
+
+D:\ASL>javac VariableExample.java
+
+D:\ASL>java VariableExample
+
+Value of instance variable myVariable: 0
+
+Value of static variable data: 30
+
+Value of local variable a: 100
