@@ -1,0 +1,55 @@
+public class SMethods
+
+{
+
+public static void main(String args[])
+
+{
+
+/*The Java String toUpperCase() method converts this String into uppercase letter and String
+
+toLowerCase() method into lowercase letter.*/
+
+String s1="Sachin";
+
+System.out.println(s1.toUpperCase());//SACHIN
+
+System.out.println(s1.toLowerCase());//sachin
+
+System.out.println(s1);//Sachin(no change in original)
+
+// The String class trim() method eliminates white spaces before and after the String.
+
+String s2=" Sachin ";
+
+System.out.println(s2);// Sachin
+
+System.out.println(s2.trim());//Sachin
+
+/* The method startsWith() checks whether the String starts with the letters passed as arguments
+
+and endsWith() method checks whether the String ends with the letters passed as arguments. */
+
+String s3="Sachin";
+
+System.out.println(s3.startsWith("Sa"));//true
+
+System.out.println(s3.endsWith("n"));//true
+
+// The String class charAt() method returns a character at specified index.
+
+String s4="Sachin";
+
+System.out.println(s4.charAt(0));//S
+
+System.out.println(s4.charAt(3));//h
+
+// The String class length() method returns length of the specified String.
+
+String s5="Sachin";
+
+System.out.println(s5.length());//6
+
+}
+
+}
