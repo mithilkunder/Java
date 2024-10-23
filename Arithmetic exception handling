@@ -1,0 +1,45 @@
+/* class: Java.lang.ArithmeticException
+
+This is a built-in-class present in java.lang package. This exception occurs when an integer is
+
+divided by zero. */
+
+class AEDemo
+
+{
+
+public static void main(String args[])
+
+{
+
+try{
+
+int num1=30, num2=0;
+
+int output=num1/num2;
+
+System.out.println ("Result = " +output);
+
+}
+
+catch(ArithmeticException e)
+
+{ System.out.println ("Arithmetic Exception: You can't divide an integer by 0"); }
+
+}
+
+}
+
+Output :
+
+C:\Documents and Settings\test>d:
+
+D:\>cd asl
+
+D:\ASL>javac AEDemo.java
+
+D:\ASL>java AEDemo
+
+Arithmetic Exception: You can't divide an integer by 0
+
+D:\ASL>
