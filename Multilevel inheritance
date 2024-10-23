@@ -1,0 +1,92 @@
+class Staff
+
+{
+
+int code; String name, address;
+
+Staff (int c, String n, String a) { code=c; name=n; address=a; }
+
+void showdata()
+
+{
+
+System.out.println("code : " + code);
+
+System.out.println("name : " + name);
+
+System.out.println("code : " + address);
+
+}
+
+}
+
+class Typist extends Staff
+
+{
+
+int speed;
+
+Typist(int c, String n, String a, int s) {super (c, n, a); speed=s;}
+
+void showdata()
+
+{
+
+super.showdata();
+
+System.out.println("speed : " + speed);
+
+}}
+
+class Regular extends Typist
+
+{
+
+int pay ;
+
+Regular (int c, String n, String a, int s, int p) {super(c, n, a, s); pay=p;}
+
+void showdata()
+
+{
+
+super.showdata();
+
+System.out.println("pay : "+pay);
+
+}}
+class MLIDemo
+
+{
+
+public static void main(String args[])
+
+{
+
+Regular R=new Regular(2001,"PQR","PANVEL",30,1200);
+
+R.showdata();
+
+}
+
+}
+
+Output :
+
+C:\Users\BEELAB>d:
+
+D:\>cd asl
+
+D:\ASL>javac MLIDemo.java
+
+D:\ASL>java MLIDemo
+
+code : 3001
+
+name : PQR
+
+code : PANVEL
+
+speed : 30
+
+pay : 1200
