@@ -1,0 +1,57 @@
+import java.applet.Applet;
+
+import java.awt.*;
+
+/*
+
+<applet code="ColorDemo.class" width="300" height="300">
+
+</applet>
+
+*/
+
+class ColorExample extends Frame
+
+{
+
+ColorExample()
+
+{
+
+Color frameColor = new Color(0,255,255);
+
+setLayout(new FlowLayout());
+
+setBackground(frameColor);
+
+Button btnCancel = new Button("Cancel");
+
+btnCancel.setBackground(Color.BLACK);
+
+btnCancel.setForeground(Color.WHITE);
+
+add(btnCancel);
+
+}
+
+}
+
+public class ColorDemo
+
+{
+
+public static void main(String args[])
+
+{
+
+ColorExample frame = new ColorExample();
+
+frame.setTitle("Color in Java Example");
+
+frame.setSize(400,150);
+
+frame.setVisible(true);
+
+}
+
+}
