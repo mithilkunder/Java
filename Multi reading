@@ -1,0 +1,85 @@
+class A extends Thread
+
+{
+
+public void run()
+
+{
+
+for (int i=1;i<=10;i++)
+
+{
+
+System.out.print(i);
+
+try
+
+{
+
+Thread.sleep(500);
+
+}
+
+catch(InterruptedException e) {System.out.println("thread A interupted"+e);}
+
+}}}
+
+class B extends Thread
+
+{
+
+public void run()
+
+{
+
+for (char i=65;i<=74 ;++i )
+
+{
+
+System.out.print(i);
+
+try
+
+{
+
+Thread.sleep(500);
+
+}
+
+catch(InterruptedException e) {System.out.println("thread binterrupted"+e);}
+
+}}}
+
+class MTDemo
+
+{
+
+public static void main (String args [])
+
+{
+
+A a=new A();
+
+a.start();
+
+B b=new B();
+
+b.start();
+
+try
+
+{
+
+a.join();
+
+b.join();
+
+}
+
+catch (InterruptedException e)
+
+{
+
+System.out.println("main thread interrupted"+e);
+
+}}}
