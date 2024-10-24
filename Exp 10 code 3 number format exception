@@ -1,0 +1,39 @@
+class NFEDemo
+
+{
+
+public static void main(String args[])
+
+{
+
+try
+
+{
+
+int num=Integer.parseInt ("XYZ") ;
+
+System.out.println(num);
+
+}
+
+catch(NumberFormatException e)
+
+{ System.out.println("Number format exception occurred"); }
+
+}
+
+}
+
+OUTPUT:
+
+C:\Documents and Settings\test>d:
+
+D:\>cd asl
+
+D:\ASL>javac NFEDemo.java
+
+D:\ASL>java NFEDemo
+
+Number format exception occurred
+
+D:\ASL>
