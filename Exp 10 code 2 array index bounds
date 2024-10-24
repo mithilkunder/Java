@@ -1,0 +1,49 @@
+/* Class: Java.lang.ArrayIndexOutOfBoundsException
+
+This is a built in class present in java.lang package. This exception occurs when the referenced
+
+element does not exist in the array. For e.g. If array is having only 5 elements and we are trying
+
+to display 7th element then it would throw this exception.*/
+
+class AIBEDemo
+
+{
+
+public static void main(String args[])
+
+{
+
+try
+
+{
+
+int a[]=new int[10];
+
+//Array has only 10 elements
+
+a[11] = 9;
+
+}
+
+catch(ArrayIndexOutOfBoundsException e)
+
+{ System.out.println ("ArrayIndexOutOfBounds"); }
+
+}
+
+}
+
+OUTPUT:
+
+C:\Documents and Settings\test>d:
+
+D:\>cd asl
+
+D:\ASL>javac AIBEDemo.java
+
+D:\ASL>java AIBEDemo
+
+ArrayIndexOutOfBounds
+
+D:\ASL>
